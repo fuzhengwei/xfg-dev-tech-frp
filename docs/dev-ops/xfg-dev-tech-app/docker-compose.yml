@@ -1,0 +1,9 @@
+version: '3.8'
+# 命令执行 docker-compose -f docker-compose-app.yml up -d
+services:
+  xfg-dev-tech-frp-app:
+    image: fuzhengwei/xfg-dev-tech-frp-app:1.0
+    container_name: xfg-dev-tech-frp-app
+    restart: always
+    ports:
+      - "8080:8080"
